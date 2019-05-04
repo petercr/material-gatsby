@@ -5,6 +5,9 @@ module.exports = {
     author: `Peter Cruckshank`,
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-material-ui`,
+    },
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -14,7 +17,6 @@ module.exports = {
       },
     },
     `gatsby-transformer-sharp`,
-    `gatsby-plugin-material-ui`,
     `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,
