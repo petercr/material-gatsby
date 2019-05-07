@@ -19,7 +19,6 @@
   "plugins": ["react"],
   "rules": {
     "semi": 0,
-    "no-console": 1,
-    "comma-dangle": ["error", "always"]
+    "no-console": 1
   }
 }
