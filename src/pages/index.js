@@ -1,5 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
+import { Helmet } from 'react-helmet'
 
 import PropTypes from "prop-types"
 import { withStyles } from "@material-ui/core/styles"
@@ -24,7 +25,11 @@ const IndexPage = props => {
   const { classes } = props
 
   return (
+
     <Layout>
+      <Helmet>
+        <title>Welcome to my page</title>
+      </Helmet>
       <h1>Hi people</h1>
       <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
         <Image />
