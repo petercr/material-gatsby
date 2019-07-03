@@ -2,27 +2,26 @@ import React from "react"
 import { Link } from "gatsby"
 import { Helmet } from 'react-helmet'
 
-import PropTypes from "prop-types"
-import { withStyles } from "@material-ui/core/styles"
+import { makeStyles } from '@material-ui/core/styles'
 import TextField from "@material-ui/core/TextField"
 
 import Layout from "../components/layout"
 import Image from "../components/image"
 
-const styles = theme => ({
+const useStyles = makeStyles(theme => ({
   container: {
-    display: "flex",
-    flexWrap: "wrap",
+    display: 'flex',
+    flexWrap: 'wrap',
   },
   textField: {
-    marginLeft: theme.spacing.unit,
-    marginRight: theme.spacing.unit,
+    marginLeft: theme.spacing(1),
+    marginRight: theme.spacing(1),
     width: 200,
   },
-})
+}))
 
 const IndexPage = props => {
-  const { classes } = props
+  const classes = useStyles()
 
   return (
 
@@ -54,8 +53,6 @@ const IndexPage = props => {
   )
 }
 
-IndexPage.propTypes = {
-  classes: PropTypes.object.isRequired,
-}
 
-export default withStyles(styles)(IndexPage)
+
+export default IndexPage
