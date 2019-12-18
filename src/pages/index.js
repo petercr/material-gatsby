@@ -38,8 +38,8 @@ const IndexPage = props => {
         <TextField
           id="time"
           label="Alarm clock"
-          type="time"
-          defaultValue="07:30"
+          type="datetime-local"
+          defaultValue="2017-05-24T10:30"
           className={classes.textField}
           InputLabelProps={{
             shrink: true,
